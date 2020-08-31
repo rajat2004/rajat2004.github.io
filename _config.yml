@@ -41,10 +41,10 @@ author:
         url: "https://github.com/rajat2004"
       - label: "LinkedIn"
         icon: "fab fa-fw fa-linkedin-in"
-        url: "www.linkedin.com/in/rajat2004"
+        url: "https://www.linkedin.com/in/rajat2004"
       - label: "Website"
         icon: "fas fa-fw fa-link"
-        url: "rajat2004.github.io"
+        url: "https://rajat2004.github.io/"
 
 
 # Site Footer
@@ -55,7 +55,7 @@ footer:
         url: "https://github.com/rajat2004"
       - label: "LinkedIn"
         icon: "fab fa-fw fa-linkedin"
-        url: "www.linkedin.com/in/rajat2004"
+        url: "https://www.linkedin.com/in/rajat2004"
 
 defaults:
     # _posts
