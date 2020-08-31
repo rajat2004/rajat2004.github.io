@@ -13,20 +13,83 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Rajat Singhal
-email: rajatsinghal564@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username:
-github_username:  rajat2004
+
+# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.20.1"
+minimal_mistakes_skin: "air"
+
+# Site Settings
+locale: "en-US"
+title: "Rajat's Corner"
+subtitle: "Posts on tech, programming and other random stuff"
+name: "Rajat Singhal"
+description: "My own Github pages website!"
+url: "https://rajat2004.github.io"
+repository: "rajat2004/rajat2004.github.io"
+
+author:
+    name: "Rajat Singhal"
+    # avatar:
+    bio: "Final year CS undergrad at IIT Madras"
+    location: "Ahmedabad, India"
+    links:
+      - label: "rajatsinghal564@gmail.com"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "mailto:rajatsinghal564@gmail.com"
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/rajat2004"
+      - label: "LinkedIn"
+        icon: "fab fa-fw fa-linkedin-in"
+        url: "www.linkedin.com/in/rajat2004"
+      - label: "Website"
+        icon: "fas fa-fw fa-link"
+        url: "rajat2004.github.io"
+
+
+# Site Footer
+footer:
+    links:
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/rajat2004"
+      - label: "LinkedIn"
+        icon: "fab fa-fw fa-linkedin"
+        url: "www.linkedin.com/in/rajat2004"
+
+defaults:
+    # _posts
+    - scope:
+        path: ""
+        type: posts
+      values:
+        layout: single
+        author_profile: true
+        read_time: true
+        comments: true
+        share: true
+        related: true
+    # _pages
+    - scope:
+        path: ""
+        type: pages
+      values:
+        layout: single
+
+
+# title: Rajat Singhal
+# email: rajatsinghal564@gmail.com
+# description: >- # this means to ignore newlines until "baseurl:"
+#   Write an awesome description for your new site here. You can edit this
+#   line in _config.yml. It will appear in your document head meta (for
+#   Google search results) and in your feed.xml site description.
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username:
+# github_username:  rajat2004
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
@@ -41,3 +104,19 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Plugins (previously gems:)
+plugins:
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-feed
+    - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-feed
+    - jekyll-include-cache
