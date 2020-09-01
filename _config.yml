@@ -90,8 +90,6 @@ defaults:
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -112,6 +110,7 @@ plugins:
     - jekyll-gist
     - jekyll-feed
     - jekyll-include-cache
+    - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
