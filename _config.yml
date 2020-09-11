@@ -75,7 +75,9 @@ defaults:
         type: pages
       values:
         layout: single
+        author_profile: true
 
+include: ["_pages"]
 
 # title: Rajat Singhal
 # email: rajatsinghal564@gmail.com
