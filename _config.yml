@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 
 # theme: minimal-mistakes-jekyll
-remote_theme: "mmistakes/minimal-mistakes@4.20.1"
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "dark"
 
 # Site Settings
