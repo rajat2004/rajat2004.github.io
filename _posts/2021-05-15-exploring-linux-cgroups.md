@@ -3,6 +3,7 @@ title: Exploring Linux Control Groups
 date:  2021-05-15 08:00:02 +0530
 classes: wide
 toc: true
+excerpt: Linux cgroups is used for limiting the system resources used by a set of processes, and is a basic block for enabling container resource isolation
 ---
 
 ## Introduction
@@ -245,7 +246,7 @@ $ cat /sys/fs/cgroup/pids/foo/pids.max
 20
 ```
 
-We've set the limit to be 20 processes. Now the test script containing the famous fork bomb-
+We've set the limit to be 20 processes. Now the test script containing the famous fork bomb (Side note: [here's](https://www.vidarholen.net/contents/blog/?p=766) a next-level one)-
 
 ```shell
 $ cat test.sh
