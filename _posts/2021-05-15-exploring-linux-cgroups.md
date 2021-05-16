@@ -33,10 +33,10 @@ The following tests have been conducted on Ubuntu 18.04
 ```shell
 $ lsb_release -a
 No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 18.04.5 LTS
-Release:	18.04
-Codename:	bionic
+Distributor ID: Ubuntu
+Description:    Ubuntu 18.04.5 LTS
+Release:    18.04
+Codename:   bionic
 
 $ uname -r
 5.4.0-72-generic
@@ -276,12 +276,12 @@ There's still a catch here! Deleting the cgroup directly will cause problems, si
 First, kill all the running processes under the cgroup, and then delete the cgroup-
 
 ```shell
-$ sudo kill -9 $(< /sys/fs/cgroup/pids/foo/tasks)
+sudo kill -9 $(< /sys/fs/cgroup/pids/foo/tasks)
 
-$ sudo cgdelete pids:foo
+sudo cgdelete pids:foo
 ```
 
-Note that killing the processes directly worked here, but to reliably kill all the processes, you'll have to free all the processes (using the `freezer` subsystem, send SIGKILL and then unfreeze them).
+Note that killing the processes directly worked here, but to reliably kill all the processes, you'll have to freeze all the processes (using the `freezer` subsystem), send SIGKILL and then unfreeze them.
 
 This is intended to be the first of a series of blogs while trying to implement some of the concepts in the paper [Houdini’s Escape: Breaking the Resource Rein of Linux Control Groups](https://dl.acm.org/doi/10.1145/3319535.3354227).
 
