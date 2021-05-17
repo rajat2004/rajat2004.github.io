@@ -69,21 +69,24 @@ void newParser(const char* data, std::vector<float>& v) {
     int i = 0;
     char* end;
 
-    while(true) {
+    while(*p) {
         v[i] = strtod(p, &end);
         // Skip comma after number
         p = ++end;
+        if (*p == '\0')
+            break;
 
         v[i+1] = strtod(p, &end);
         // Skip comma after number
         p = ++end;
+        if (*p == '\0')
+            break;
 
         v[i+2] = strtod(p, &end);
 
         // Truncated input or end of array
-        if (*end == ']' || *end == '\0') {
+        if (*end == '\0' || *end == ']')
             break;
-        }
 
         i += 3;
         p = ++end;

@@ -42,7 +42,27 @@ $ uname -r
 5.4.0-72-generic
 ```
 
-The cgroup virtual filesystem is located in `/sys/fs/cgroup`, it lists the various subsystems present. Checkout the [cgroups man page](https://man7.org/linux/man-pages/man7/cgroups.7.html) for details on each.
+Ubuntu 18.04 uses cgroup-v1 by default, if `/sys/fs/cgroup/cgroup.controllers` is present, then cgroup-v2 is used. To list all the cgroups, see:
+
+```shell
+$ cat /proc/cgroups
+#subsys_name	hierarchy	num_cgroups	enabled
+cpuset	8	1	1
+cpu	2	88	1
+cpuacct	2	88	1
+blkio	9	88	1
+memory	3	93	1
+devices	7	88	1
+freezer	10	1	1
+net_cls	4	1	1
+perf_event	11	1	1
+net_prio	4	1	1
+hugetlb	12	1	1
+pids	6	94	1
+rdma	5	1	1
+```
+
+The cgroup virtual filesystem is located in `/sys/fs/cgroup`.. Checkout the [cgroups man page](https://man7.org/linux/man-pages/man7/cgroups.7.html) for details on each.
 
 ```shell
 $ ls /sys/fs/cgroup
@@ -291,3 +311,5 @@ References:
 - [Kernel cgroup-v2 documentation](https://www.kernel.org/doc/Documentation/cgroup-v2.txt)
 - [cgroups man page](https://man7.org/linux/man-pages/man7/cgroups.7.html)
 - [Everything You Need to Know about Linux Containers, Part I: Linux Control Groups and Process Isolation](https://www.linuxjournal.com/content/everything-you-need-know-about-linux-containers-part-i-linux-control-groups-and-process)
+- [Houdini’s Escape: Breaking the Resource Rein of Linux Control Groups](https://dl.acm.org/doi/10.1145/3319535.3354227)
+- [Docker Runtime metrics docs](https://docs.docker.com/config/containers/runmetrics/)
