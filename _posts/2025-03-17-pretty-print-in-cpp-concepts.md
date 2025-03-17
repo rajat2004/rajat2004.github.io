@@ -176,6 +176,7 @@ struct S
     int x;
 };
 
+{% raw %}
 std::ostream& operator<<(std::ostream& ss, const S& obj)
 {
     ss << "x: " << obj.x;
@@ -203,6 +204,7 @@ int main() {
     static_assert(is_container<decltype(mp)>, "Not a container");
     static_assert(is_associative_container<decltype(mp)>, "Not associative container");
 }
+{% endraw %}
 ```
 
 Example output -
