@@ -30,8 +30,8 @@ repository: "rajat2004/rajat2004.github.io"
 author:
     name: "Rajat Singhal"
     # avatar:
-    bio: "Final year CS undergrad at IIT Madras"
-    location: "Ahmedabad, India"
+    bio: "SWE at Tower Research Capital"
+    location: "Gurgaon, India"
     links:
       - label: "rajatsinghal564@gmail.com"
         icon: "fas fa-fw fa-envelope-square"

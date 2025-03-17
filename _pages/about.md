@@ -5,10 +5,12 @@ title: About
 permalink: /about/
 ---
 
-I'm a current final year CS undergrad at IIT Madras, interested in Distributed Systems, Machine Learning, Robotics and Systems Engineering. Being a focused and technical person, I enjoy building new products and improving my skills through various projects and courses.
+I'm currently working as a Software Developer at Tower Research Capital in the Core Engineering division, focusing on low-latency front-office components. Most of my day-to-day work is in C++, with sprinkling of Python, Shell scripting for extra flavour. Prior to that I graduated from IIT Madras with a Bachelors in Computer Science.
 
-I've been a part of the open-source community for the last 2 years, having started with exploring robotics. Since then, I have participated in GSoC 2019 with [ArduPilot.org](https://ardupilot.org/), a versatile open autopilot software for drones and other autonomous systems.  Contributing to various projects has helped and motivated me when learning new tools and languages and led to learning interesting features and tricks which probably wouldn't have happened otherwise. Currently, I work more on [AirSim](https://github.com/microsoft/airsim/), having developed several new features, bug fixes, unit-testing, CI/CD & improved documentation.
+I'm interested in building low latency systems, Operating Systems, designing for scalability and also dabble a bit in Distributed Systems, Machine Learning, Robotics and Systems Engineering.
 
-Apart from this, I've taken various courses related to Systems Engineering and core CS and use other online methods to explore my interests. Reading books is one of my major hobbies, and I enjoy reading technical books and fiction novels and keeping myself up to date with the latest news and technologies through blog posts and articles.
+Bit of older history, I've been a part of the open-source community since around 2019, having started with exploring robotics. Since then, I have participated in GSoC 2019 with [ArduPilot.org](https://ardupilot.org/), a versatile open autopilot software for drones and other autonomous systems. My main work during GSoC was to add support for [AirSim](https://github.com/microsoft/airsim/)
 
-Reach out if you want to discuss anything related to programming, tech or even my current or other series (ps. Malazan Book of the Fallen currently)!
+Reading books is one of my major hobbies, and I enjoy reading technical books and fiction novels (primarily fantasy, and also exploring SciFi, LitRPG). I've also recently started focusing more on my health and going to gym regularly, and play Table Tennis, Badminton recreationally.
+
+Reach out if you want to discuss anything related to programming, tech or even novels (ps. reading Malazan Book of the Fallen currently)!
